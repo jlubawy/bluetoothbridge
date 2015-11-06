@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/statusTextView"
+            android:layout_weight="0.05"
+            android:background="@android:color/background_light"
+            android:editable="false"
+            android:gravity="center_vertical"
+            android:singleLine="false"
+            android:paddingLeft="10dp"
+            android:text="Disconnected" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.90"
+            android:id="@+id/serialTextView"
+            android:scrollbars = "vertical"
+            android:background="@android:color/black"
+            android:textColor="@android:color/holo_green_light"
+            android:gravity="bottom"
+            android:paddingTop="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Clear"
+                android:id="@+id/clearButton"
+                android:layout_weight="0.33" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Upload"
+                android:id="@+id/uploadButton"
+                android:layout_weight="0.33" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Connect"
+                android:id="@+id/connectButton"
+                android:layout_weight="0.33" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
